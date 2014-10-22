@@ -1,0 +1,31 @@
+package android.wizard.precise.ads.adapters;
+
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.wizard.precise.ads.fragment.AdsFragment;
+
+public class TabsPagerAdapter extends FragmentPagerAdapter {
+
+    public static final int COUNT_ITEM = 2;
+
+    public TabsPagerAdapter(FragmentManager fm) {
+        super(fm);
+    }
+
+    @Override
+    public Fragment getItem(int i) {
+        switch (i) {
+            case 0:
+                return AdsFragment.newInstance();
+            case 1:
+                return AdsFragment.newInstance();
+        }
+        return null;
+    }
+
+    @Override
+    public int getCount() {
+        return COUNT_ITEM;
+    }
+}
