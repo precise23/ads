@@ -41,7 +41,6 @@ public class StartupFragment extends RoboFragment implements ActionBar.TabListen
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-//        viewPager = (ViewPager) view.findViewById(R.id.pager);
         FragmentActivity activity = getActivity();
         actionBar = activity.getActionBar();
         TabsPagerAdapter adapter = new TabsPagerAdapter(getFragmentManager());

@@ -3,7 +3,8 @@ package android.wizard.precise.ads.adapters;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.wizard.precise.ads.fragment.AdsFragment;
+import android.wizard.precise.ads.fragment.ListAdsFragment;
+import android.wizard.precise.ads.fragment.NewAdFragment;
 
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
@@ -17,9 +18,9 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int i) {
         switch (i) {
             case 0:
-                return AdsFragment.newInstance();
+                return ListAdsFragment.newInstance();
             case 1:
-                return AdsFragment.newInstance();
+                return NewAdFragment.newInstance();
         }
         return null;
     }

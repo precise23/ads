@@ -4,5 +4,9 @@
     <string name="app_name">Доска объявлений</string>
     <string name="list_of_ads">Список объявлений</string>
     <string name="new_ad">Новое объявление</string>
+    <string name="name">Название</string>
+    <string name="description">Описание</string>
+    <string name="city">Город</string>
+    <string name="add">Добавить</string>
 
 </resources>
